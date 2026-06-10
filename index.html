@@ -646,7 +646,7 @@
   // Paste your Google Apps Script Web App URL below after deployment.
   // Example: const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/a/macros/gamudaland.com.my/s/AKfycbyPNKuxyokiwxrLKrwvi-MddxuPYkTPsFRBErbxRBXrzfDkMZ3MFE1rjdJ65TlaA13Hzw/exec';
   const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/a/macros/gamudaland.com.my/s/AKfycbyPNKuxyokiwxrLKrwvi-MddxuPYkTPsFRBErbxRBXrzfDkMZ3MFE1rjdJ65TlaA13Hzw/exec';
-  const GAME_VERSION = 'v10-mobile-google-sheet-ready';
+  const GAME_VERSION = 'v11-ios-submission-fix';
 
   const i18n = {
     en: {
@@ -656,7 +656,7 @@
       startTitle:'Design your future 70+ home', startText:'Walk through a normal two-floor home, discover daily design pain points, then choose only 6 upgrades. Your choices become useful event survey data.', avatarA:'Blue', avatarB:'Rose', avatarC:'Green', ageLabel:'Your current age', startControls:'Desktop: A/D or arrows to walk, W/S on stairs, E to interact. iPhone: use the on-screen buttons.', startBtn:'Start Home Tour',
       priorityTitle:'One trade-off question', priorityText:'If you had limited budget for your future 70+ home, what would you prioritise first?', continueToShop:'Continue to Upgrade Shop',
       shopTitle:'Choose up to 6 upgrades', shopText:'This fixed budget is intentional: choose what truly matters most. Selected:', shopHint:'After choosing, select an item from the kit, move to the highlighted room, then press E or tap the highlighted area to install.', close:'Close', confirmSelection:'Confirm Selection',
-      dashboardTitle:'Session Dashboard', sessionIdLabel:'Session ID:', priorityScores:'Priority Scores', summary:'Summary', eventLog:'Event Log', exportCsv:'Export CSV', submitSheet:'Submit to Google Sheet', newPlayer:'New Player / Reset', sheetConnected:'Google Sheet: connected', sheetNotConnected:'Google Sheet is not connected yet. Paste your Apps Script Web App URL into GOOGLE_SHEETS_WEB_APP_URL.', sheetSubmitted:'Submission sent. Please check Google Sheet / Apps Script Executions to verify.', sheetSubmitting:'Submitting session data…', sheetQueued:'Connection failed, so the session is saved locally. Export CSV as backup.', sheetAlreadySubmitted:'This session was already submitted.',
+      dashboardTitle:'Session Dashboard', sessionIdLabel:'Session ID:', priorityScores:'Priority Scores', summary:'Summary', eventLog:'Event Log', exportCsv:'Export CSV', submitSheet:'Submit to Google Sheet', newPlayer:'New Player / Reset', sheetConnected:'Google Sheet: connected', sheetNotConnected:'Google Sheet is not connected yet. Paste your Apps Script Web App URL into GOOGLE_SHEETS_WEB_APP_URL.', sheetSubmitted:'Submission sent. On iPhone, wait 5–10 seconds then check Google Sheet / Apps Script Executions.', sheetSubmitting:'Submitting session data…', sheetQueued:'Connection failed, so the session is saved locally. Export CSV as backup.', sheetAlreadySubmitted:'This session was already submitted.',
       helpTitle:'How to play', helpText1:'1) Enter the home. 2) Inspect the staircase, bathroom, kitchen shelf/cabinet, and bedroom night route. 3) Answer the priority question. 4) Choose only 6 upgrades. 5) Install at least 3 upgrades to finish.', helpText2:'Selected means you chose it from the shop. Installed means you placed it in the correct room. The dashboard records both for later CSV export.',
       thanksTitle:'Thank you — End Game!', thanksText:'Your choices help us understand what people value most for 70+ living.', profileTitle:'Your 70+ Home Profile', installedUpgrades:'Installed Upgrades', backToHome:'Back to Home',
       noKit:'Complete missions to unlock upgrade selection.', selectFromKit:'Select an upgrade from your kit, then install it at the glowing room.', kitEmpty:'No upgrades selected yet.',
@@ -680,7 +680,7 @@
       startTitle:'Thiết kế ngôi nhà tương lai tuổi 70+', startText:'Đi qua một căn nhà hai tầng thông thường, nhận diện các bất tiện hằng ngày, sau đó chỉ chọn 6 nâng cấp. Lựa chọn của bạn trở thành dữ liệu khảo sát cho sự kiện.', avatarA:'Xanh', avatarB:'Hồng', avatarC:'Lá', ageLabel:'Tuổi hiện tại', startControls:'Máy tính: A/D hoặc phím mũi tên để đi, W/S ở cầu thang, E để tương tác. iPhone: dùng nút cảm ứng trên màn hình.', startBtn:'Bắt đầu tham quan',
       priorityTitle:'Một câu hỏi đánh đổi', priorityText:'Nếu ngân sách cho ngôi nhà 70+ có giới hạn, bạn ưu tiên điều gì trước?', continueToShop:'Tiếp tục đến cửa hàng nâng cấp',
       shopTitle:'Chọn tối đa 6 nâng cấp', shopText:'Ngân sách cố định là có chủ đích: hãy chọn điều thật sự quan trọng. Đã chọn:', shopHint:'Sau khi chọn, bấm một món trong bộ nâng cấp, đi đến phòng đang sáng lên, rồi nhấn E hoặc chạm vùng sáng để lắp đặt.', close:'Đóng', confirmSelection:'Xác nhận lựa chọn',
-      dashboardTitle:'Bảng dữ liệu phiên chơi', sessionIdLabel:'Mã phiên:', priorityScores:'Điểm ưu tiên', summary:'Tóm tắt', eventLog:'Nhật ký sự kiện', exportCsv:'Xuất CSV', submitSheet:'Gửi vào Google Sheet', newPlayer:'Người chơi mới / Reset', sheetConnected:'Google Sheet: đã kết nối', sheetNotConnected:'Chưa kết nối Google Sheet. Hãy dán Apps Script Web App URL vào GOOGLE_SHEETS_WEB_APP_URL.', sheetSubmitted:'Đã gửi yêu cầu. Hãy kiểm tra Google Sheet / Apps Script Executions để xác nhận.', sheetSubmitting:'Đang gửi dữ liệu…', sheetQueued:'Không gửi được, nên phiên chơi được lưu tạm trên trình duyệt. Hãy xuất CSV để dự phòng.', sheetAlreadySubmitted:'Phiên chơi này đã được gửi rồi.',
+      dashboardTitle:'Bảng dữ liệu phiên chơi', sessionIdLabel:'Mã phiên:', priorityScores:'Điểm ưu tiên', summary:'Tóm tắt', eventLog:'Nhật ký sự kiện', exportCsv:'Xuất CSV', submitSheet:'Gửi vào Google Sheet', newPlayer:'Người chơi mới / Reset', sheetConnected:'Google Sheet: đã kết nối', sheetNotConnected:'Chưa kết nối Google Sheet. Hãy dán Apps Script Web App URL vào GOOGLE_SHEETS_WEB_APP_URL.', sheetSubmitted:'Đã gửi yêu cầu. Trên iPhone, đợi 5–10 giây rồi kiểm tra Google Sheet / Apps Script Executions.', sheetSubmitting:'Đang gửi dữ liệu…', sheetQueued:'Không gửi được, nên phiên chơi được lưu tạm trên trình duyệt. Hãy xuất CSV để dự phòng.', sheetAlreadySubmitted:'Phiên chơi này đã được gửi rồi.',
       helpTitle:'Cách chơi', helpText1:'1) Vào nhà. 2) Kiểm tra cầu thang, phòng tắm, tủ/kệ bếp và lối đi ban đêm trong phòng ngủ. 3) Trả lời câu hỏi ưu tiên. 4) Chỉ chọn 6 nâng cấp. 5) Lắp ít nhất 3 nâng cấp để kết thúc.', helpText2:'Đã chọn nghĩa là bạn chọn trong cửa hàng. Đã lắp nghĩa là bạn đặt vào đúng vị trí trong nhà. Bảng dữ liệu ghi nhận cả hai để xuất CSV.',
       thanksTitle:'Cảm ơn — Kết thúc trò chơi!', thanksText:'Lựa chọn của bạn giúp hiểu rõ hơn mọi người coi trọng điều gì cho cuộc sống 70+.', profileTitle:'Hồ sơ nhà 70+ của bạn', installedUpgrades:'Nâng cấp đã lắp', backToHome:'Quay lại nhà',
       noKit:'Hoàn thành nhiệm vụ để mở chọn nâng cấp.', selectFromKit:'Chọn một nâng cấp trong bộ, rồi lắp tại phòng đang sáng.', kitEmpty:'Chưa chọn nâng cấp nào.',
@@ -1240,6 +1240,10 @@
     if(state.sheetSubmittedAt) return `submitted ${new Date(state.sheetSubmittedAt).toLocaleString()}`;
     return hasSheetEndpoint() ? 'ready' : 'not connected';
   }
+  function isIOSDevice(){
+    const ua = navigator.userAgent || '';
+    return /iPad|iPhone|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  }
   function buildSubmissionPayload(){
     const selected=state.selected.map(id=>localName(upgradeMap[id]));
     const installed=state.installed.map(id=>localName(upgradeMap[id]));
@@ -1257,28 +1261,109 @@
     const current=JSON.parse(localStorage.getItem(key)||'[]');
     current.push(payload); localStorage.setItem(key, JSON.stringify(current.slice(-20)));
   }
+  function markSheetSubmitted(method){
+    state.sheetSubmittedAt = nowISO();
+    log('data','google_sheet_submit',method || 'submitted');
+    localStorage.setItem('lifePlusLastSession', JSON.stringify({state, logs:state.logs}));
+    showToast(t('sheetSubmitted'));
+  }
+  function submitViaHiddenForm(payload){
+    return new Promise((resolve, reject)=>{
+      try{
+        const iframeName = 'lifeplus_sheet_iframe_' + Date.now();
+        const iframe = document.createElement('iframe');
+        iframe.name = iframeName;
+        iframe.style.position = 'fixed';
+        iframe.style.left = '-9999px';
+        iframe.style.top = '-9999px';
+        iframe.style.width = '1px';
+        iframe.style.height = '1px';
+        iframe.style.opacity = '0';
+        iframe.setAttribute('aria-hidden','true');
+        document.body.appendChild(iframe);
+
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = GOOGLE_SHEETS_WEB_APP_URL;
+        form.target = iframeName;
+        form.style.display = 'none';
+        form.acceptCharset = 'UTF-8';
+
+        const input = document.createElement('textarea');
+        input.name = 'payload';
+        input.value = JSON.stringify(payload);
+        form.appendChild(input);
+        document.body.appendChild(form);
+
+        let resolved = false;
+        const done = ()=>{
+          if(resolved) return;
+          resolved = true;
+          setTimeout(()=>{ form.remove(); iframe.remove(); }, 1500);
+          resolve(true);
+        };
+        iframe.addEventListener('load', done, {once:true});
+        form.submit();
+        // Safari / in-app iPhone browsers may not fire iframe load for Apps Script, but the POST is still sent.
+        setTimeout(done, 4500);
+      }catch(err){ reject(err); }
+    });
+  }
+  async function submitViaFetchForm(payload){
+    const params = new URLSearchParams();
+    params.append('payload', JSON.stringify(payload));
+    await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
+      method:'POST',
+      mode:'no-cors',
+      headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
+      body:params.toString(),
+      keepalive:false
+    });
+    return true;
+  }
+  async function submitViaTextPost(payload){
+    await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
+      method:'POST',
+      mode:'no-cors',
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body:JSON.stringify(payload),
+      keepalive:false
+    });
+    return true;
+  }
   async function submitSessionToSheet(silent=false){
     if(state.sheetSubmittedAt){ if(!silent) showToast(t('sheetAlreadySubmitted')); return false; }
     if(!hasSheetEndpoint()){ showToast(t('sheetNotConnected')); return false; }
     const payload=buildSubmissionPayload();
-    const body=JSON.stringify(payload);
     if(!silent) showToast(t('sheetSubmitting'));
     try{
-      if(navigator.sendBeacon){
-        const blob=new Blob([body],{type:'text/plain;charset=utf-8'});
-        const ok=navigator.sendBeacon(GOOGLE_SHEETS_WEB_APP_URL, blob);
-        if(ok){ state.sheetSubmittedAt=nowISO(); log('data','google_sheet_submit','sendBeacon submitted'); showToast(t('sheetSubmitted')); return true; }
+      // iPhone/Safari/in-app browsers are more reliable with a native form POST to a hidden iframe.
+      if(isIOSDevice()){
+        await submitViaHiddenForm(payload);
+        markSheetSubmitted('hidden form POST submitted');
+        return true;
       }
-      await fetch(GOOGLE_SHEETS_WEB_APP_URL,{method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'}, body});
-      state.sheetSubmittedAt=nowISO();
-      log('data','google_sheet_submit','fetch no-cors submitted');
-      showToast(t('sheetSubmitted'));
+      // Desktop route: URL-encoded POST is also accepted by the Apps Script v11 backend.
+      await submitViaFetchForm(payload);
+      markSheetSubmitted('fetch form POST submitted');
       return true;
-    }catch(err){
-      queueSubmission(payload);
-      log('data','google_sheet_submit_failed',String(err));
-      showToast(t('sheetQueued'));
-      return false;
+    }catch(err1){
+      try{
+        await submitViaTextPost(payload);
+        markSheetSubmitted('fallback text POST submitted');
+        return true;
+      }catch(err2){
+        try{
+          await submitViaHiddenForm(payload);
+          markSheetSubmitted('fallback hidden form POST submitted');
+          return true;
+        }catch(err3){
+          queueSubmission(payload);
+          log('data','google_sheet_submit_failed',String(err3 || err2 || err1));
+          showToast(t('sheetQueued'));
+          return false;
+        }
+      }
     }
   }
 
@@ -1331,7 +1416,7 @@
   }
 
   // Useful for checking the Google Sheet connection from browser console.
-  window.LIFEPLUS_DEBUG = { buildSubmissionPayload, submitSessionToSheet, hasSheetEndpoint };
+  window.LIFEPLUS_DEBUG = { buildSubmissionPayload, submitSessionToSheet, hasSheetEndpoint, submitViaHiddenForm, submitViaFetchForm, isIOSDevice };
 
   function setupEvents(){
     $('startBtn').onclick=startGame; $('shopBtn').onclick=openShop; $('dashboardBtn').onclick=openDashboard; $('syncBtn').onclick=()=>submitSessionToSheet(false); $('endBtn').onclick=showEnd; $('helpBtn').onclick=()=>$('helpOverlay').classList.add('show');
